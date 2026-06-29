@@ -1,6 +1,10 @@
 # surajsambath
 
-Personal portfolio for **Suraj Sambath Kumar** — Senior Android Engineer at Mindvalley.
+This is my personal portfolio. I'm **Suraj Sambath Kumar**, a Senior Android Engineer at Mindvalley.
+
+I built it with Next.js on purpose — I'm planning to grab my own domain soon, and going with Next.js meant the move would be painless when that day comes. Honestly, it was also just a fun excuse to learn something new outside of Android.
+
+It's open source, so feel free to clone it, make it your own, and ship your own version.
 
 Live: https://suraj2600.github.io/surajsambath/
 
@@ -32,18 +36,14 @@ Push to `master`. The `.github/workflows/deploy.yml` action builds and publishes
 
 > First-time setup: in the repo on GitHub, go to **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-## Adding your photo
+## Make it yours
 
-Drop a square-ish portrait at `public/profile.jpg`. It will appear in the hero — no code changes needed.
+Cloning this? Swap the photo at `public/profile.jpg`, edit all the copy in [`lib/data.ts`](./lib/data.ts), and push.
 
-## Updating content
+## Custom domain
 
-All copy lives in [`lib/data.ts`](./lib/data.ts). Edit it and push.
-
-## Renaming the repo to `<username>.github.io`
-
-If you want the URL to become `https://suraj2600.github.io/` (no path prefix), change the `repo` constant in [`next.config.mjs`](./next.config.mjs) to an empty string, then rename the GitHub repo to `suraj2600.github.io`.
+When I move to my own domain, set it under **Settings → Pages → Custom domain** and clear the `repo` base path in [`next.config.mjs`](./next.config.mjs).
 
 ## Archive
 
-The previous 2019 HTML template is preserved under [`archive/`](./archive) for reference. It is not deployed.
+My original 2019 HTML portfolio lives in [`archive/`](./archive) for old times' sake — it isn't deployed.
