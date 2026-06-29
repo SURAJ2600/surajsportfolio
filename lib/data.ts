@@ -9,7 +9,7 @@ export const profile = {
   linkedin: 'https://linkedin.com/in/surajsambath',
   resume: 'https://drive.google.com/uc?export=download&id=15kVZFZEQznMmBBej7ApaSADey5vZZHEc',
   summary:
-    'Senior Android Engineer with 10+ years specializing in platform architecture, media systems, and performance engineering. I own critical app subsystems — video/audio pipelines, CI/CD, startup performance — for apps used by millions, and increasingly ship cross-platform with Next.js, Node.js, and AI-assisted workflows using Claude Code and Cursor.',
+    "Senior Android Engineer with 10+ years building platform architecture, media systems, and performance-critical subsystems — video/audio pipelines, CI/CD, startup performance — for apps used by millions. Lately I've been stretching into web and iOS through AI-assisted development with Claude Code and Cursor. I've never thought of myself as a finished book; curiosity keeps pulling me toward new things, and I love working with great people and going the extra mile to get things done right.",
 }
 
 export const skills = [
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     name: 'Entri',
     tagline: 'Exam-preparation and community learning platform with modular Android features.',
     downloads: '5M+',
-    url: 'https://play.google.com/store/apps/details?id=in.entri.app',
+    url: 'https://play.google.com/store/apps/details?id=me.entri.entrime&hl=en',
     tags: ['MVVM', 'Modular', 'Testing'],
   },
 ]

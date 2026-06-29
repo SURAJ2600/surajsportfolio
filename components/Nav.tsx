@@ -48,7 +48,7 @@ export function Nav() {
         </ul>
         <div className="hidden items-center gap-2 md:flex">
           <a
-            href="https://drive.google.com/uc?export=download&id=15kVZFZEQznMmBBej7ApaSADey5vZZHEc"
+            href="https://drive.google.com/file/d/15kVZFZEQznMmBBej7ApaSADey5vZZHEc/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="rounded-md border border-line px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-muted transition-colors hover:border-accent hover:text-accent"
