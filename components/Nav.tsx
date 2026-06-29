@@ -46,12 +46,21 @@ export function Nav() {
             </li>
           ))}
         </ul>
-        <a
-          href="#contact"
-          className="hidden rounded-md border border-line px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-ink transition-colors hover:border-accent hover:text-accent md:inline-block"
-        >
-          Get in touch
-        </a>
+        <div className="hidden items-center gap-2 md:flex">
+          <a
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/resume.pdf`}
+            download="Suraj-Sambath-Kumar-Resume.pdf"
+            className="rounded-md border border-line px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-muted transition-colors hover:border-accent hover:text-accent"
+          >
+            Resume
+          </a>
+          <a
+            href="#contact"
+            className="rounded-md border border-line px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-ink transition-colors hover:border-accent hover:text-accent"
+          >
+            Get in touch
+          </a>
+        </div>
       </nav>
     </header>
   )

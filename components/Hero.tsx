@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ArrowRight, Github, Linkedin, Mail, MapPin } from 'lucide-react'
+import { ArrowRight, Download, Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import { profile } from '@/lib/data'
 
 export function Hero() {
@@ -39,6 +39,14 @@ export function Hero() {
             >
               See my work
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </a>
+            <a
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/resume.pdf`}
+              download="Suraj-Sambath-Kumar-Resume.pdf"
+              className="group inline-flex items-center gap-2 rounded-md border border-line px-4 py-2.5 font-mono text-sm text-ink transition-colors hover:border-accent hover:text-accent"
+            >
+              <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+              Download CV
             </a>
             <a
               href="#contact"

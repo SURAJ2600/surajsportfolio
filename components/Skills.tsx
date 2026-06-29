@@ -9,9 +9,15 @@ export function Skills() {
         <SectionHeader index="03" title="Skills" subtitle="The stack I reach for." />
       </Reveal>
 
-      <div className="grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((s, idx) => (
-          <Reveal key={s.group} delay={idx * 40}>
+          <Reveal
+            key={s.group}
+            delay={idx * 40}
+            className={
+              idx === skills.length - 1 ? 'sm:col-span-2 lg:col-span-1' : undefined
+            }
+          >
             <div className="h-full bg-bg p-5">
               <div className="mb-3 font-mono text-xs uppercase tracking-widest text-accent">
                 {s.group}
