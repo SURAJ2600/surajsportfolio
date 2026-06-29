@@ -1,9 +1,12 @@
 'use client'
 
+import { useState } from 'react'
 import { ArrowRight, Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import { profile } from '@/lib/data'
 
 export function Hero() {
+  const [imgFailed, setImgFailed] = useState(false)
+
   return (
     <section
       id="top"
@@ -81,22 +84,22 @@ export function Hero() {
         <div className="relative mx-auto w-full max-w-sm animate-fade-in">
           <div className="absolute -inset-4 -z-10 rounded-3xl bg-accent/10 blur-2xl" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-panel">
+            {imgFailed && (
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center font-mono text-xs text-muted">
+                <span className="text-center">
+                  add your photo at
+                  <br />
+                  <code className="text-accent">/public/profile.jpg</code>
+                </span>
+              </div>
+            )}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/profile.jpg`}
               alt={profile.name}
               className="absolute inset-0 h-full w-full object-cover"
-              onError={(e) => {
-                ;(e.currentTarget as HTMLImageElement).style.display = 'none'
-              }}
+              onError={() => setImgFailed(true)}
             />
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center font-mono text-xs text-muted">
-              <span className="text-center">
-                add your photo at
-                <br />
-                <code className="text-accent">/public/profile.jpg</code>
-              </span>
-            </div>
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-bg/80 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 font-mono text-xs text-ink/80">
               <div className="flex items-center justify-between">
