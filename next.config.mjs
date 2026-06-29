@@ -3,7 +3,8 @@
  * If repo is renamed to <user>.github.io, set basePath to '' (user site has no path prefix).
  */
 const isProd = process.env.NODE_ENV === 'production'
-const repo = 'surajsportfolio'
+// Set to '' if you rename the repo to <username>.github.io (no path prefix needed)
+const repo = 'surajsambath'
 const basePath = isProd ? `/${repo}` : ''
 
 /** @type {import('next').NextConfig} */

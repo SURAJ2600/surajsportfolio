@@ -2,6 +2,7 @@ export const profile = {
   name: 'Suraj Sambath Kumar',
   role: 'Senior Android Engineer',
   location: 'Kuala Lumpur, Malaysia',
+  url: 'https://suraj2600.github.io/surajsambath/',
   email: 'surajsambathkumar@gmail.com',
   phone: '+60 1125319833',
   github: 'https://github.com/SURAJ2600',

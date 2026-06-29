@@ -1,8 +1,8 @@
-# surajsportfolio
+# surajsambath
 
 Personal portfolio for **Suraj Sambath Kumar** — Senior Android Engineer at Mindvalley.
 
-Live: https://suraj2600.github.io/surajsportfolio/
+Live: https://suraj2600.github.io/surajsambath/
 
 ## Stack
 
