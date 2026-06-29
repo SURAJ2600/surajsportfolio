@@ -17,14 +17,6 @@ export function Hero() {
 
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-12 px-6 py-20 md:grid-cols-[1.4fr_1fr] md:items-center">
         <div className="animate-fade-up">
-          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-panel/60 px-3 py-1 font-mono text-xs text-muted">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
-            </span>
-            Available for senior / staff Android roles
-          </p>
-
           <h1 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight md:text-6xl">
             Building Android
             <br />
