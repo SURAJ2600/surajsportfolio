@@ -41,8 +41,9 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/resume.pdf`}
-              download="Suraj-Sambath-Kumar-Resume.pdf"
+              href={profile.resume}
+              target="_blank"
+              rel="noreferrer"
               className="group inline-flex items-center gap-2 rounded-md border border-line px-4 py-2.5 font-mono text-sm text-ink transition-colors hover:border-accent hover:text-accent"
             >
               <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />

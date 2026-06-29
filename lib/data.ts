@@ -7,6 +7,7 @@ export const profile = {
   phone: '+60 1125319833',
   github: 'https://github.com/SURAJ2600',
   linkedin: 'https://linkedin.com/in/surajsambath',
+  resume: 'https://drive.google.com/uc?export=download&id=15kVZFZEQznMmBBej7ApaSADey5vZZHEc',
   summary:
     'Senior Android Engineer with 10+ years specializing in platform architecture, media systems, and performance engineering. I own critical app subsystems — video/audio pipelines, CI/CD, startup performance — for apps used by millions, and increasingly ship cross-platform with Next.js, Node.js, and AI-assisted workflows using Claude Code and Cursor.',
 }
